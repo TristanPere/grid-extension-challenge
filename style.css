@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tahoma, Segoe UI', Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    margin: 10px;
+}
+
+.heading{
+    height: 10%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 10px;
+}
+
+.home, .work, .about, .contact, .optionButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.optionSelect {
+    display: none;
+}
+.home{
+    justify-content: flex-start;
+}
+.optionButton {
+    justify-content: flex-end;
+}
+.images{
+    display: flex;
+    flex-direction: column; /*need to space images evenly*/
+}
+
+@media screen and (min-width:768px) {
+    .optionSelect {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .optionButton{
+        display: none;
+    }
+    .heading{
+        height: 10%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        margin: 10px;
+    }
+
+    
+}
+
+
+/* header{
+    display: grid;
+    height: 10%;
+    grid-template-areas:
+    "head work about contract options"
+    grid-gap: 5px;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+
+head{
+    grid-area: head;
+}
+.work{
+    grid-area: work;
+}
+.about{
+    grid-area: about;
+}
+.contact{
+    grid-area: contract;
+}
+.optionButton{
+    grid-area: options;
+}
+ */
